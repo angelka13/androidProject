@@ -1,4 +1,4 @@
-package com.example.project;
+package com.example.project.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,9 @@ import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.project.R;
 
+public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RegistrationActivity.class);
+                Intent intent = new Intent(getApplicationContext(), RegistrationActivity.class);
                 startActivity(intent);
             }
         });
