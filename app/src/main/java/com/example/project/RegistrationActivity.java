@@ -1,25 +1,22 @@
 package com.example.project;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
-
+public class RegistrationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
-        TextView register = (TextView)findViewById(R.id.lnkRegister);
-        register.setMovementMethod(LinkMovementMethod.getInstance());
-        register.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.registration);
+        TextView login = (TextView)findViewById(R.id.lnkLogin);
+        login.setMovementMethod(LinkMovementMethod.getInstance());
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RegistrationActivity.class);
+                Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
