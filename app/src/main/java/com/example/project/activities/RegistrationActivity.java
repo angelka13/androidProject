@@ -26,7 +26,7 @@ public class RegistrationActivity extends AppCompatActivity {
     private final static String LOGIN_INC_REG_ERROR_ERROR = "Login should contain only digit, upper case";
     private final static String LOGIN_ERROR = "Please enter login";
     private final static String LOGIN_UNAVAILABLE_ERROR = "Login unavailable, please choose another one";
-    private final static String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{4,}$";
+    private final static String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^?!&+=])(?=\\S+$).{4,}$";
     private final static String LOGIN_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{4,}$";
 
     EditText loginEditText;
